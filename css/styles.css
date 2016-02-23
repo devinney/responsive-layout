@@ -1,0 +1,333 @@
+/* =================
+Base Styles
+================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.5;
+	color: #0c3669;
+	text-align: center;
+	background: #f7f7f7;
+}
+
+h2 {
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	padding: 0 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #0c3669;
+}
+
+h3,
+a {
+	text-transform: uppercase;
+}
+
+span,
+a {
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+}
+
+#view-more a {
+	border-bottom: 2px solid #0c3669;
+}
+
+
+/* =================
+Layout styles
+================= */
+
+/* ---Header/Main Navigation--- */
+
+.main-header {
+	margin: 20px 5px 30px;
+}
+
+.name {
+	margin: 0;
+}
+
+.main-nav ul {
+	padding: 0 5px;
+}
+.main-nav li {
+	margin-top: 5px;
+	background-color: #fff;
+}
+
+.main-nav li:hover {
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+.main-nav a {
+	display: block;
+	padding: 10px 15px;
+}
+
+/* ---About--- */
+
+.about {
+	margin: 30px 0;
+}
+
+.about img {
+	width: 70%;
+}
+
+/* ---Main Content--- */
+
+.portfolio {
+	padding: 30px 10px 20px;
+	background: #fff;
+}
+
+.portfolio ul {
+	list-style: none;
+	padding: 0;
+	margin: 40px 0 0;
+}
+
+.portfolio p {
+	margin-bottom: 40px;
+}
+
+/* ---Contact--- */
+
+.contact {
+	margin: 40px 0;
+	padding: 10px;
+}
+
+.phone {
+	margin: 20px 0 0;
+}
+
+.email {
+	margin-top: 10px;
+}
+
+/* ---Footer--- */
+
+footer {
+	margin: 10px;
+	border-top: 2px solid #c6c6c6;
+	text-align: left;
+	padding: 20px 5px 10px;
+	font-weight: bold;
+}
+
+.footer-nav {
+	display: none;
+}
+
+footer a {
+	display: block;
+	float: right;
+}
+
+/* =================
+Contact Page
+================= */
+.contact-info img {
+	width: 70%;
+}
+.contact-info  {
+	padding: 20px;
+}
+
+
+/* =================
+Media Queries
+================= */
+
+@media (min-width: 600px) {
+	
+	body {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	/* ---main navigation--- */
+	.main-nav li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	
+	/* ---about---*/
+	.about {
+		text-align: left;
+		font-size: 1.1em;
+		margin: 40px 0;
+	}
+	
+	.about img {
+		width: 40%;
+		float: right;
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+	
+	/* ---main content--- */
+	.portfolio {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.portfolio li {
+		width: 45%;
+		float: left;
+		margin: 0 2.5%;
+	}
+	
+	.portfolio li:nth-child(2n + 1){
+		clear: left;
+	}
+	
+	
+	/* ---contact--- */
+	
+	.contact {
+		width: 70%;
+		margin: 20px auto;
+	}
+	
+	.contact p {
+		font-size: 1.2em;
+	}
+	
+	/* ---footer--- */
+	.to-top {
+		display: none;
+	}
+
+	.footer-nav {
+		display: inline-block;
+		float: right;
+		margin: 0;
+		font-size: .8em;
+	}
+	
+	.footer-nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.footer-nav li {
+		display: inline-block;
+		float: left;
+		margin-left: 20px;
+	}
+	
+	/* ---portfolio page--- */
+	.portfolio-welcome {
+		font-size: 1.2em;
+		margin: 50px;
+	}
+	
+}
+
+@media (min-width: 1024px) {
+	body{
+		width: 80%;
+		max-width: 1150px;
+	}
+	
+	/* ---main navigation--- */
+	.name {
+		float: left;
+	}
+	
+	.main-nav {
+		float: right;
+	}
+	
+	.main-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.main-nav li {
+		margin: 10px;
+	}
+	
+	/* ---intro--- */
+	.about {
+		font-size: 1.5em;
+	}
+	
+	/* ---main content--- */
+	
+	.portfolio li {
+		width: 28.3333%;
+	}
+	.portfolio p {
+		font-size: 1.2em;
+	}
+	
+	.portfolio li:nth-child(2n + 1){
+		clear: none;
+	}
+	
+	.portfolio li:nth-child(3n + 1){
+		clear: left;
+	}
+
+	
+	/* ---contact--- */
+	.contact {
+		width: 60%;
+	}
+	.contact p {
+		font-size: 1.5em;
+	}
+	
+	/* ---portfolio page--- */
+	.portfolio-welcome {
+		font-size: 1.5em;
+	}
+	
+	/* ---contact page--- */
+	.contact-info  {
+		margin-top: 80px;
+	}
+
+	.contact-info img {
+		float: right;
+		width: 40%;
+		margin-left: 30px;
+		margin-bottom: 70px;
+	}
+	
+	.wrap {
+		min-height: calc(100vh - 98px);
+	}
+	
+}
+
+/* ---Clearfix--- */
+
+.clear::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
