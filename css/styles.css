@@ -157,7 +157,7 @@ Contact Page
 Media Queries
 ================= */
 
-@media (min-width: 600px) {
+@media (min-width: 769px) {
 	
 	body {
 		width: 90%;
